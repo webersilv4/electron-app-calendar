@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script>window.$ = window.jQuery = require('jquery');</script>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./styles/globals.css">
+    <title>Calendario</title>
+</head>
+
+
+<body>
+    
+    <!-- custom menu -->
+    <div id="menu-bar">
+        <div class="left" role="menu">
+            <h5 class="d-flex">
+                Calendario
+            </h5>
+        </div>
+        <div class="right">
+            <button class="menubar-btn" id="minimize-btn">MI</button>
+            <button class="menubar-btn" id="max-unmax-btn">MA</button>
+            <button class="menubar-btn" id="close-btn">FC</button>
+        </div>
+    </div>
+
+    <!-- Month and Year -->
+    <div class="month">
+        <ul>
+            <li>
+                <span id="month"></span><br>
+                <span id="year"></span>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Week Days -->
+    <ul class="weekdays col-md-12 row">
+        <li>Domingo</li>
+        <li>Segunda</li>
+        <li>Terça</li>
+        <li>Quarta</li>
+        <li>Quinta</li>
+        <li>Sexta</li>
+        <li>Sábado</li>
+    </ul>
+    
+    <!-- Days os Week -->
+    <ul class="days" id="days"></ul>
+
+
+    <!-- Button trigger modal -->
+    <a href="" type="button" data-toggle="modal" data-target="#exampleModal1">Ola</a>
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="calendar.js"></script>
+    <script src="database/db.js"></script>
+    <script src="components/preload.js"></script>
+    
+    <script src="../public/bootstrap/js/jquery.min.js"></script>
+    <script src="../public/bootstrap/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>

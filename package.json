@@ -1,0 +1,21 @@
+{
+  "name": "calendar",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "electron ."
+  },
+  "main": "main.js",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^19.0.6"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.8",
+    "jquery": "3.5.1",
+    "md5": "^2.3.0",
+    "sqlite": "^4.1.1",
+    "sqlite3": "^5.0.8",
+    "time-stamp": "^2.2.0",
+    "uniqid": "^5.4.0"
+  }
+}
