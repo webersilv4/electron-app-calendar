@@ -109,7 +109,8 @@ body {font-family: sans-serif;}
   justify-content: space-between;
   align-items: center;
   height: 30px;
-  background: #34475a;
+  background: #151515;
+  color: white;
   -webkit-app-region: drag;
 }
 
